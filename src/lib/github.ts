@@ -23,7 +23,6 @@ export async function fetchGitHubRepos(username: string): Promise<Project[]> {
           Accept: "application/vnd.github+json",
           "User-Agent": "portfolio-site",
         },
-        next: { revalidate: 3600 }, // ISR: revalidate every hour
       }
     );
 
